@@ -1,0 +1,53 @@
+:root {
+  --primery-text-color: #212121;
+  --title-text-color: #757575;
+  --hero-text-color: #ffffff;
+  --accent-color: #2196f3;
+}
+body {
+  background-color: #ffffff;
+  color: var(--primery-text-color);
+}
+
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: var(--primery-text-color);
+}
+
+.logo-web {
+  color: var(--accent-color);
+}
+.position,
+.main-addr a,
+.social-networks a {
+  color: var(--title-text-color);
+}
+
+.hero,
+.our-work a {
+  color: var(--hero-text-color);
+  background-color: tomato;
+}
+.link,
+.logo-studio,
+.addr-map,
+.follow {
+  color: var(--hero-text-color);
+}
+
+.features {
+  color: var(--title-text-color);
+}
+footer {
+  background-color: #2f303a;
+}
+
+.addr-email {
+  color: rgba(255, 255, 255, 0.6);
+}
+.developed {
+  color: rgba(255, 255, 255, 0.4);
+}
