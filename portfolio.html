@@ -4,23 +4,37 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Портфолио</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <!-- Шапка сайта -->
     <header>
       <nav>
-        <a href="./index.html">Web Studio</a>
-        <ul>
+        <a href="./index.html" class="logo primery"
+          ><span class="logo-web">Web</span> Studio</a
+        >
+        <ul class="site-nav">
           <li><a href="./index.html">Студия</a></li>
           <li><a href="./portfolio.html">Портфолио</a></li>
           <li><a href="">Контакты</a></li>
         </ul>
       </nav>
-      <address>
+      <address class="main-addr">
         <ul>
-          <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-          <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+          <li>
+            <a href="mailto:info@devstudio.com">
+              <img src="./img/email.svg" alt="" /> info@devstudio.com</a
+            >
+          </li>
+          <li>
+            <a href="tel:+380961111111">
+              <img src="./img/phone.svg" alt="" /> +38 096 111 11 11</a
+            >
+          </li>
         </ul>
       </address>
     </header>
@@ -28,15 +42,13 @@
     <!-- Основная инфа -->
     <main>
       <section>
-        <h1>Проекты</h1>
-
-        <!--ЗДЕСЬ ТАК ИЛИ НЕТ??????????? -->
+        <h1>Наши проекты</h1>
         <ul>
-          <li>Все</li>
-          <li>Веб-сайты</li>
-          <li>Приложения</li>
-          <li>Дизайн</li>
-          <li>Маркетинг</li>
+          <li><button type="button" class="button">Все</button></li>
+          <li><button type="button" class="button">Веб-сайты</button></li>
+          <li><button type="button" class="button">Приложения</button></li>
+          <li><button type="button" class="button">Дизайн</button></li>
+          <li><button type="button" class="button">Маркетинг</button></li>
         </ul>
 
         <ul>
@@ -207,20 +219,22 @@
 
     <!-- Футер сайта -->
     <footer>
-      <a href="./index.html">Web Studio</a>
+      <a href="./index.html" class="logo secondary"
+        ><span class="logo-web">Web</span> Studio</a
+      >
       <address>
-        г. Киев, пр-т Леси Украинки, 26 <br />
-        info@example.com <br />
-        +38 099 111 11 11
+        <span class="addr-map">г. Киев, пр-т Леси Украинки, 26 </span> <br />
+        <span class="addr-email"> info@example.com </span> <br />
+        <span class="addr-phone">+38 099 111 11 11</span>
       </address>
-      <h3>присоединяйтесь</h3>
-      <ul>
+      <h3 class="follow">присоединяйтесь</h3>
+      <ul class="social-networks">
         <li><a href="" aria-label="Ссылка на Instagram">Instagram</a></li>
         <li><a href="" aria-label="Ссылка на Twitter">Twitter</a></li>
         <li><a href="" aria-label="Ссылка на Facebook">Facebook</a></li>
         <li><a href="" aria-label="Ссылка на LinkedIn">LinkedIn</a></li>
       </ul>
-      <p>2020 | Developed by GoIT Students</p>
+      <p class="developed">2020 | Developed by GoIT Students</p>
     </footer>
   </body>
 </html>

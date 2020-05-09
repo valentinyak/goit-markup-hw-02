@@ -1,14 +1,18 @@
 :root {
   --primery-text-color: #212121;
-  --title-text-color: #757575;
-  --hero-text-color: #ffffff;
+  --gray-text-color: #757575;
+  --white-text-color: #ffffff;
   --accent-color: #2196f3;
+  --secondary-bg-color: #f5f4fa;
 }
 body {
   background-color: #ffffff;
   color: var(--primery-text-color);
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.03em;
 }
-
 ul {
   list-style: none;
 }
@@ -16,38 +20,155 @@ a {
   text-decoration: none;
   color: var(--primery-text-color);
 }
+h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
 
+/* Стилизация хедера */
+/* Стилизация логотипа */
+.logo {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+}
+.logo.primery {
+  font-size: 26px;
+  line-height: 1.19;
+}
+.logo.secondary {
+  font-size: 22px;
+  line-height: 1.18;
+  color: var(--white-text-color);
+}
 .logo-web {
   color: var(--accent-color);
 }
-.position,
-.main-addr a,
-.social-networks a {
-  color: var(--title-text-color);
+
+/* Стилизация навигации */
+.site-nav li {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.site-nav a:hover,
+.site-nav a:focus {
+  color: var(--accent-color);
+}
+.main-addr a:hover,
+.main-addr a:focus {
+  color: var(--accent-color);
+}
+/* Стилизация адреса */
+.main-addr a {
+  color: var(--gray-text-color);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 
-.hero,
-.our-work a {
-  color: var(--hero-text-color);
+/* Стилизация страницы */
+/* Стилизация героя */
+.hero {
+  color: var(--white-text-color);
+  background-color: tomato;
+  text-align: center;
+}
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.hero-link {
+  color: var(--white-text-color);
+}
+
+/* Стилизация преимуществ */
+.features-title {
+  display: none;
+}
+.features-title-h3 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+.features-paragraph {
+  color: var(--gray-text-color);
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+/* Стилизация наших работ */
+.our-work span {
+  color: var(--white-text-color);
   background-color: tomato;
 }
-.link,
-.logo-studio,
-.addr-map,
-.follow {
-  color: var(--hero-text-color);
+
+/* Стилизация команды */
+.our-team p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
 }
 
-.features {
-  color: var(--title-text-color);
+.our-team .our-team-position {
+  color: var(--gray-text-color);
+  font-weight: 400;
 }
+.social-networks a {
+  color: var(--gray-text-color);
+}
+
+/* Стилизация кнопок */
+.button {
+  background-color: var(--secondary-bg-color);
+  color: var(--primery-text-color);
+  width: 128px;
+  height: 38px;
+  border-radius: 4px;
+}
+.button:hover,
+.button:focus {
+  background-color: var(--accent-color);
+  color: var(--white-text-color);
+}
+
+/* Стилизация футера */
+/* Стилизация футера */
 footer {
   background-color: #2f303a;
 }
-
-.addr-email {
+.addr-map {
+  color: var(--white-text-color);
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+}
+.addr-email,
+.addr-phone {
   color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+}
+.follow {
+  color: var(--white-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
 }
 .developed {
   color: rgba(255, 255, 255, 0.4);
+  font-size: 12px;
+  line-height: 2;
+  text-align: center;
 }
