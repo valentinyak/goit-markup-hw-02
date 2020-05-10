@@ -46,7 +46,7 @@ h2 {
   color: var(--accent-color);
 }
 
-/* Стилизация навигации */
+/* Стилизация главной навигации */
 .site-nav li {
   font-weight: 500;
   font-size: 14px;
@@ -58,9 +58,11 @@ h2 {
   color: var(--accent-color);
 }
 .main-addr a:hover,
-.main-addr a:focus {
+.main-addr a:focus,
+.current {
   color: var(--accent-color);
 }
+
 /* Стилизация адреса */
 .main-addr a {
   color: var(--gray-text-color);
@@ -74,8 +76,8 @@ h2 {
 /* Стилизация страницы */
 /* Стилизация героя */
 .hero {
+  background-color: rgba(33, 150, 243, 0.9);
   color: var(--white-text-color);
-  background-color: tomato;
   text-align: center;
 }
 .hero-title {
@@ -86,7 +88,12 @@ h2 {
   text-transform: uppercase;
 }
 .hero-link {
+  background-color: var(--accent-color);
   color: var(--white-text-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1, 87;
+  letter-spacing: 0.06em;
 }
 
 /* Стилизация преимуществ */
@@ -107,8 +114,27 @@ h2 {
 
 /* Стилизация наших работ */
 .our-work span {
+  background-color: rgba(33, 150, 243, 0.9);
   color: var(--white-text-color);
-  background-color: tomato;
+}
+.project-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.project-type {
+  color: var(--gray-text-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+}
+.project-description {
+  color: var(--white-text-color);
+  background: rgba(33, 150, 243, 0.9);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56;
 }
 
 /* Стилизация команды */
@@ -126,17 +152,22 @@ h2 {
 .social-networks a {
   color: var(--gray-text-color);
 }
+.social-networks a:hover,
+.social-networks a:focus {
+  color: var(--accent-color);
+}
 
 /* Стилизация кнопок */
-.button {
+.portfolio-button {
   background-color: var(--secondary-bg-color);
   color: var(--primery-text-color);
-  width: 128px;
-  height: 38px;
-  border-radius: 4px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
 }
-.button:hover,
-.button:focus {
+.portfolio-button:hover,
+.portfolio-button:focus {
   background-color: var(--accent-color);
   color: var(--white-text-color);
 }
@@ -165,6 +196,21 @@ footer {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+}
+.enter-e-mail {
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+}
+.follow-button {
+  background-color: var(--accent-color);
+  color: var(--white-text-color);
+  font-family: inherit;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
 }
 .developed {
   color: rgba(255, 255, 255, 0.4);
